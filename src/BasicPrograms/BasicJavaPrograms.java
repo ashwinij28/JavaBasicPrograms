@@ -3,6 +3,39 @@ package BasicPrograms;
 import java.util.Scanner;
 
 public class BasicJavaPrograms {
+    public void UsingSwitchCase()
+    {
+        System.out.println("Please select the options");
+        System.out.println("1 for Harmonic");
+        System.out.println("2 for Head Tail");
+        System.out.println("3 for Leap Year");
+        System.out.println("4 for Power of Two");
+        System.out.println("5 for QuotientAndRemainder");
+        System.out.println("6 for SwapOfNumber");
+        Scanner i_input = new Scanner(System.in);
+        int option = i_input.nextInt();
+        switch (option) {
+            case 1:
+                HarmonicNumber();
+                break;
+            case 2:
+                HeadTail();
+                break;
+            case 3:
+                LeapYear();
+                break;
+            case 4:
+                PowerOfTwo();
+                break;
+            case 5:
+                QuotientAndRemainder();
+                break;
+            case 6:
+                SwapOfNumber();
+                break;
+        }
+    }
+
     public void HarmonicNumber()
     {
         Scanner sc = new Scanner(System.in);
